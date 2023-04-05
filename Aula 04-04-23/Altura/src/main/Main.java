@@ -13,18 +13,18 @@ public class Main {
         double IMC = peso / (altura * altura);
 
         if (IMC < 18.5) {
-            JOptionPane.showMessageDialog(null, String.format(" %.2f Abaixo do Peso", IMC));
+            JOptionPane.showMessageDialog(null, String.format(" %.2f \nAbaixo do Peso", IMC));
         } else if (IMC <= 24.9) {
-            JOptionPane.showMessageDialog(null, String.format(" %.2f Peso Normal", IMC));
+            JOptionPane.showMessageDialog(null, String.format(" %.2f \nPeso Normal", IMC));
         } else if (IMC <= 29.9) {
-            JOptionPane.showMessageDialog(null, String.format(" %.2f SobrePeso", IMC));
+            JOptionPane.showMessageDialog(null, String.format(" %.2f \nSobrePeso\n", IMC));
         } else if (IMC <= 34.9) {
-            JOptionPane.showMessageDialog(null, String.format(" %.2f Obesidade Leve", IMC));
+            JOptionPane.showMessageDialog(null, String.format(" %.2f \nObesidade Leve\n", IMC));
         } else if (IMC <= 39.9) {
-            JOptionPane.showMessageDialog(null, String.format(" %.2f Obesidade Moderada", IMC));
+            JOptionPane.showMessageDialog(null, String.format(" %.2f \nObesidade Moderada\n", IMC));
 
         } else {
-            JOptionPane.showMessageDialog(null, IMC + "Obesidade Mórbida");
+            JOptionPane.showMessageDialog(null, IMC + "\nObesidade Mórbida");
         }
     }
 
